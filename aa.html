@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>حساب المعدل التراكمي</title>
+    <link rel="stylesheet" href="aa.css">
+</head>
+<body>
+	<form>
+		<h1>حساب المعدل التراكمي</h1>
+		<label>الاسم الأول والأخير:</label>
+		<input type="text" name="name">
+		<label>تاريخ الميلاد:</label>
+		<input type="date" name="dob">
+		<label>البريد الإلكتروني:</label>
+		<input type="email" name="email">
+		<label>كلمة المرور:</label>
+		<input type="password" name="password">
+		<label>المواد:</label>
+		<div id="subjects"></div>
+	<p>العدل التراكمي: <span id="gpa"></span></p>
+		<label>التعليق:</label>
+		<textarea name="comment" rows="5"></textarea>
+		<input onclick="calculateGPA()" type="submit" name="submit" value="حساب المعدل التراكمي">
+	</form>
+	<section class="comments">
+		<h2>التعليقات</h2>
+		<div id="comment-list"></div>
+	</section>
+	<script src="aa.js"></script>
+</body>
+</html>
